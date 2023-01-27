@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Media Server</title>
+        <style>
+            html, body {
+                margin: 0px;
+                background-color: #242321;
+            }
+            .banner {
+                background-color: #ffbb00;
+                width: 100vw;
+                height: 10%;
+                position: absolute;
+                display: flex;
+                align-items: center;
+                column-gap: 10%;
+                border-bottom: solid 1px #242321;
+            }
+            .banner > h1 {
+                font-family: sans-serif;
+                color: #242321;
+            }
+            .banner > #links {
+                display: flex;
+                column-gap: 2%;
+                height: 75%;
+            }
+            .banner > #links > a {
+                font-weight: 700;
+                font-family: sans-serif;
+                color: #242321;
+                border: solid 1px #242321;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 10vw;
+            }
+            .banner > #links > a:hover {
+                background-color: #684e07;
+                color: #ffffff;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="banner">
+            <h1>The Media Server</h1>
+            <div id="links">
+                <a href="/">Home</a>
+                <a href="/c?videos">Videos</a>
+                <a href="/c?photos">Photos</a>
+                <a href="/c?audio">Audio</a>
+            </div>
+        </div>
+        <div class="media">
+            $$REPLACE$$
+        </div>
+    </body>
+</html>
